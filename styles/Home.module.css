@@ -1,0 +1,58 @@
+.search {
+    height: 30vh;
+    background-image: url("../public/pattern-bg.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btnSearch {
+    background: transparent;
+    border: none;
+    height: 7vh;
+    width: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+} 
+
+.btnSearch:hover {
+    background-color: hsl(0, 0%, 59%);
+}
+
+.searchBox {
+    height: 7vh;
+    width: 30vw;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+}
+
+.searchContainer {
+    display: flex;
+}
+
+.map {
+    height: 70vh;
+} 
+
+@media screen and (max-width: 350px) {
+    .searchBox {
+        height: 6.5vh;
+        width: 80vw;
+        font-size: 18px;
+    }
+
+    .btnSearch  {
+        height: 6.5vh;
+    }
+}
