@@ -1,0 +1,119 @@
+.container {
+    height: 30vh;
+    background-image: url("../assets/pattern-bg.png");
+    background-size: cover;
+}
+.search {
+    height: 20vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: visible;
+}
+
+.btnSearch {
+    background: transparent;
+    border: none;
+    height: 7vh;
+    width: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+} 
+
+.btnSearch:hover {
+    background-color: hsl(0, 0%, 59%);
+}
+
+.searchBox {
+    height: 7vh;
+    width: 30vw;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+}
+
+.searchContainer {
+    display: flex;
+}
+
+.map {
+    height: 70vh;
+} 
+
+.output {
+    width: 70vw;
+    height: 22vh;
+    background-color: #FFF;
+    position: absolute;
+    margin-top: 45vh;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 4;
+    /* border: 1px solid black; */
+}
+
+.outputBlob {
+    padding: 20px;
+    height: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.outputBlob h2 {
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.outputBlob h3 {
+    color: hsl(0, 0%, 17%);
+    font-size: 1.6rem;
+}
+
+.line {
+    height: 7vh;
+    width: 0.9px;
+    background-color: #CCC;
+}
+
+@media screen and (max-width: 420px) {
+    .searchBox {
+        height: 6.5vh;
+        width: 80vw;
+        font-size: 18px;
+    }
+
+    .btnSearch  {
+        height: 6.5vh;
+    }
+
+    .output {
+        width: 90vw;
+        height: 40vh;
+        margin-top: 60vh;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outputBlob {
+        align-items: center;
+        height: 10vh;
+    }
+
+    .line {
+        display: none;
+    }
+}
